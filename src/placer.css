@@ -1,0 +1,45 @@
+.sign-place {
+  margin: 24px 0 0;
+  padding: 14px;
+  background: var(--card);
+  border: 1px solid var(--rule);
+}
+
+.place-wrap {
+  position: relative;
+  width: min(100%, 640px);
+  margin: 0 auto;
+  user-select: none;
+}
+
+.place-wrap canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0 0 1px var(--rule);
+}
+
+.sig-box {
+  position: absolute;
+  border: 1px dashed var(--accent);
+  cursor: move;
+  touch-action: none;
+}
+
+.sig-box img {
+  display: block;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+}
+
+.place-hint {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 12px;
+  font-size: 14px;
+  color: var(--muted);
+}
